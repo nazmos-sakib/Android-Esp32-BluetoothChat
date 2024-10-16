@@ -32,6 +32,28 @@ This Android app connects to an ESP-32 microcontroller via Classical Bluetooth (
     <img  src="app/src/main/res/raw/ss_demo.gif" alt="Image 1" style=" border: 2px solid #ccc; border-radius: 8px; align: center;">
 </div>
 
+## Android Build
+
+> compileSdk 34 <br>
+> minSdk 26 <br>
+> targetSdk 34 <br>
+> Java version 17
+
+    
+## Permissions    
+   ```XML
+   <uses-permission android:name="android.permission.BLUETOOTH" android:maxSdkVersion="30"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" android:usesPermissionFlags="neverForLocation"
+        tools:targetApi="s" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION"
+        tools:ignore="CoarseFineLocation" />
+    <uses-feature android:name="android.hardware.bluetooth" />
+   ```
+
+
 ## Setup
 
 To run this project, follow these steps:
